@@ -1,0 +1,61 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.ahorcado{
+    width: 40%;
+    height: 300px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+}
+.ahorcado .conatinerPalo{
+    width: 40%;
+    margin: auto auto;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+.ahorcado .conatinerPalo .palo{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background-color: black;
+}
+.ahorcado .conatinerPalo .paloH{
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    background-color: black;
+}
+.ahorcado .conatinerPalo .ersona{
+    position: absolute;
+    z-index: 11111;
+    background-color: blue;
+    width: 50px;
+    left: 65%;
+    top: 10%;
+}
+
+.ahorcado .palabraRandom{
+    min-width: 100%;
+    max-width: fit-content;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(211, 211, 211);
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(50px,1fr)); */
+    place-items: center;
+}
+.ahorcado .palabraRandom .letra{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    font-size: 1.9rem;
+    background-color: rgb(235, 235, 235);
+    color:rgb(184, 184, 184)
+}
